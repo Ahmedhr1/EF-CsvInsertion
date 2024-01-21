@@ -45,6 +45,7 @@ public class Program
 
             }
 
+
             string trying = string.Empty;
             int count = 0;
             foreach (string line in BlogCsv)
@@ -70,6 +71,7 @@ public class Program
                         break;
 
                     }
+
                 }
                 trying = url;
             }
@@ -92,6 +94,7 @@ public class Program
                 }
 
             }
+
             string trying2 = string.Empty;
             int count2 = 0;
             foreach (string line in Usercsv)
@@ -101,6 +104,7 @@ public class Program
                 string username = userLine[1];
                 string password = userLine[2];
                 int postId = int.Parse(userLine[3]);
+
                 if (trying2 != username)
                 {
                     if (count2 == 0)

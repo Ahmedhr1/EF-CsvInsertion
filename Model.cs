@@ -17,7 +17,7 @@ public class User
         public string? Password { get; set; }
 
 
-       public List<int> Posts = new List<int>();
+       public List<int>? Posts = new List<int>();
 
 }
     public class Post
@@ -28,10 +28,10 @@ public class User
 
         public int? BlogId { get; set; }
 
-        public Blog Blog { get; set; }
+        public Blog? Blog { get; set; }
 
         public int? UserId { get; set; }
-        public User User { get; set; }
+        public User? User { get; set; }
     }
 
     public class Blog
@@ -41,7 +41,7 @@ public class User
 
         public string? Name { get; set; }
 
-        public List<int> Posts = new List<int>();
+        public List<int>? Posts = new List<int>();
 
         
 
